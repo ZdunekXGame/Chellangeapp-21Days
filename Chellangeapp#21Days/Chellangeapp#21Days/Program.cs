@@ -1,25 +1,30 @@
 ﻿
-var Name = ("Sebastian");
-var Sex = ("Men");
-var NumberAge = 22;
+using System.ComponentModel.Design;
 
-if (NumberAge < 22)
+string name = ("Sebastian");
+bool man = true;
+int age = 22;
+
+if (man == true)
 {
-    if (Name == "Sebastian")
+    if (age == 22 && name == "Sebastian")
     {
-        Console.WriteLine("Mam na imię Sebastian i mam 22 lata");
+        Console.WriteLine("Sebastian, age 22");
     }
-}
-else
-{
-    if (Name == "Sebastian");
-}
-{
-    if (NumberAge == 22) ;
-}
-{
-    if (Sex == "Men") ;
-}
-{
-    Console.WriteLine("Mam na imię Sebastian mam 22 lata i jestem mężczyzną");
+    else if (name != "Sebastian" && age < 30)
+    {
+        Console.WriteLine("Male under 30 years old");
+    }
+    else
+
+    {
+        if (age < 18)
+        {
+            Console.WriteLine("Underage male");
+        }
+        else if (man == true)
+        {
+            Console.WriteLine("A man is born");
+        }
+    }
 }
