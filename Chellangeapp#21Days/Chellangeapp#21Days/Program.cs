@@ -2,36 +2,26 @@
 using System.ComponentModel.Design;
 
 string name = ("Sebastian");
+string surname = (" Zduńczyk");
 bool man = true;
-int age = 22;
+int age2 = 27;
+string name2 = "Żaneta";
+bool woman = true;
+int age3 = -5;
+string results = name + surname;
+int age = age2 + age3;
+char favortieLetter = 'S';
 
-if (man == true)
+if (results == name + surname && favortieLetter == 'T')
 {
-    if (age >= 23 && name == "Sebastian")
-    {
-        Console.WriteLine("Sebastian, age 22");
-    }
-    else if (name != "Sebastian" && age < 30)
-    {
-        Console.WriteLine("Male under 30 years old");
-    }
-    else
-
-    {
-        if (age < 18)
-        {
-            Console.WriteLine("Underage male");
-        }
-        else if (man == false)
-        {
-            Console.WriteLine("A man is born");
-        }
-    }
+    Console.WriteLine("I am " + results + " " + age + " years old");
 }
- 
+else if (!man == true)
 {
-    if (age == 22 && name == "Sebastian" && man == true)
-    {
-        Console.WriteLine("It's me, a 22-years-old man named Sebastian");
-            }
+    Console.WriteLine("Her name is " + name2 + " and has " + age2 + " years old");
 }
+else if (woman == true)
+    if (results == name + surname && favortieLetter == 'S' && !man == false && age < age2 && age2 <= 27)
+    {
+        Console.WriteLine("I am " + results + " " + age + " years old, " + "Her name is " + name2 + " and has " + age2 + " years old.");
+    }
